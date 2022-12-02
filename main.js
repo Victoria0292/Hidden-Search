@@ -1,8 +1,8 @@
-const searchBar = document.getElementsByClassName('searchBar')
-const button = document.getElementsByClassName('button')
-const userInput = document.getElementsByClassName('userInput')
+const searchBar = document.querySelector('.searchBar')
+const btn = document.querySelector('.btn')
+const userInput = document.querySelector('.userInput')
 
-button.addEventListener('click', () => {
+btn.addEventListener('click', () => {
     searchBar.classList.toggle('active')
     userInput.focus()
 })
